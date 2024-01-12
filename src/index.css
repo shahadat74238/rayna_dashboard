@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link_active {
+    @apply text-[#F56630] font-medium block w-full bg-[#FFECE5] px-4 py-3 rounded
+}
+.link_normal {
+    @apply text-[#101928] block w-full  px-4 py-3 
+}
