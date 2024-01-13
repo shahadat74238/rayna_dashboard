@@ -3,7 +3,6 @@ import {
   ControlsChevronUp,
   ControlsChevronDown,
   Other3Dots,
-  GenericUser,
 } from "@heathmont/moon-icons-tw";
 const TableSection = () => {
   const data = [
@@ -78,7 +77,7 @@ const TableSection = () => {
                           size="lg"
                           className=" bg-[#FFECE5] cursor-pointer text-[#F56630] rounded-full"
                         >
-                          <GenericUser className="text-moon-24" />
+                          <img src="https://xsgames.co/randomusers/assets/avatars/male/63.jpg" alt="Loading" />
                         </Avatar>
                         <span className="h-3 w-3 bg-green-700 absolute rounded-full right-0 bottom-1"></span>
                       </div>

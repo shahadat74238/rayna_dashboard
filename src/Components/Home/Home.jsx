@@ -89,9 +89,9 @@ const Home = () => {
           />
         </div>
         {/* Char section */}
-        <div className="lg:grid lg:grid-cols-7 grid-cols-1 gap-6 mt-4">
+        <div className="grid md:grid-cols-7 lg:grid-cols-7 grid-cols-1 gap-6 mt-4">
           {/* main Chart */}
-          <div className="col-span-5 rounded-md bg-white p-4">
+          <div className="md:col-span-4 lg:col-span-5 rounded-md bg-white p-4">
             {/* Title  */}
             <div>
               <h2 className="text-moon-20 font-bold">Metrics</h2>
@@ -100,7 +100,7 @@ const Home = () => {
               </p>
             </div>
             <div>
-              <div className="grid gap-4 mt-4 grid-cols-1 md:grid-cols-2">
+              <div className="grid gap-4 mt-4 grid-cols-1 lg:grid-cols-2">
                 <ChartCard title="Customer PR" number="20,502" percent="10%" />
                 <ChartCard title="Unique PPV" number="14,295" percent="5%" />
               </div>
@@ -114,7 +114,7 @@ const Home = () => {
             </div>
           </div>
           {/* Side chart */}
-          <div className="col-span-2 rounded-md mt-4 lg:mt-0 bg-white px-5 py-6">
+          <div className="md:col-span-3 lg:col-span-2 rounded-md mt-4 md:mt-0 bg-white px-5 py-6">
             <p className="font-medium text-[#475367] text-moon-14">
               Active Subscribers
             </p>
@@ -135,7 +135,7 @@ const Home = () => {
           </div>
         </div>
           {/* Social */}
-          <div className="mt-4 ">
+          <div className="mt-4  ">
             <Social />
           </div>
       </div>

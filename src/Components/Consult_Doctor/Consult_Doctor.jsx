@@ -3,7 +3,6 @@ import {
   ChatCommentText,
   GenericPlus,
   GenericSearch,
-  GenericUser,
   NotificationsBell,
   TimeAlarm,
 } from "@heathmont/moon-icons-tw";
@@ -11,7 +10,7 @@ import TableSection from "../Table/TableSection";
 
 const Consult_Doctor = () => {
   return (
-    <div>
+    <div className="bg-[#F0F2F5]">
       <div className="px-9 bg-white flex justify-between items-center">
         <div className=" py-3 w-full relative">
           <input
@@ -26,12 +25,12 @@ const Consult_Doctor = () => {
             <NotificationsBell className="text-moon-24" />
           </Avatar>
           <Avatar className="rounded-full bg-[#F0F2F5]">
-            <GenericUser className="text-moon-24" />
+            <img src="https://xsgames.co/randomusers/assets/avatars/male/46.jpg" alt="Loading" />
           </Avatar>
         </div>
       </div>
       {/* next body */}
-      <div className="bg-[#F0F2F5] px-9">
+      <div className="bg-[#F0F2F5] px-9 min-h-screen">
         <div className="flex justify-between items-center pt-8">
           <div>
             <h1 className="text-moon-24 font-semibold">Consult a Doctor</h1>

@@ -11,7 +11,7 @@ const MainLayout = () => {
     <div className="lg:flex max-w-[1440px] mx-auto">
       <div className="block lg:hidden">
         <Button
-          className={isStartOpen ? "hidden" : "block"}
+          
           variant="outline"
           onClick={handleStartClick}
         >

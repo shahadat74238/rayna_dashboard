@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../../src/assets/logo.png";
+import gDrive from "../../../src/assets/g-drive.png";
+import paypal from "../../../src/assets/paypal.png";
+
 import {
   GenericHome,
   ChatCommentText,
   GenericSettings,
-  GenericUser,
   GenericLogOut,
   GenericDelete,
   MediaHeadphones,
@@ -17,8 +19,8 @@ const SideBar = () => {
       <div className="mx-6 my-2">
         <img className="scale-100" src={logo} alt="Loading Logo" />
       </div>
-      <div className="grid grid-rows-5 h-[80vh] mb-6">
-        <div className="mx-2 pb-3 row-span-2">
+      <div className="lg:grid lg:grid-rows-5  mb-6">
+        <div className="mx-2 pb-3 lg:row-span-2">
           <ul>
             <li>
               <NavLink
@@ -45,9 +47,24 @@ const SideBar = () => {
               </NavLink>
             </li>
           </ul>
+          <hr className="my-4" />
+          <p className="text-[#98A2B3] px-4">Integrations</p>
+          <ul className="mt-3">
+            <li>
+              <p className="cursor-pointer flex gap-3 items-center px-4 py-1 lg:py-3">
+                <img className="h-4" src={gDrive} alt="png" />
+                <span className="text-[#101928] ">Google Drive</span>
+              </p>
+            </li>
+            <li>
+              <p className="cursor-pointer flex gap-3 items-center px-4 py-1 lg:py-3 ">
+                <img src={paypal} alt="" /><span className="text-[#101928] ">Paypal</span>
+              </p>
+            </li>
+          </ul>
         </div>
-        <div className="row-span-1"></div>
-        <div className="mx-2 row-span-2">
+        <div className=" lg:row-span-1"></div>
+        <div className="mx-2  lg:row-span-2">
           <ul>
             <li>
               <p className="link_normal">
@@ -74,7 +91,7 @@ const SideBar = () => {
                 size="lg"
                 className=" bg-[#FFECE5] cursor-pointer text-[#F56630] rounded-full"
               >
-                <GenericUser className="text-moon-24" />
+               <img src="https://xsgames.co/randomusers/assets/avatars/male/46.jpg" alt="loading" />
               </Avatar>
               <span className="h-3 w-3 bg-green-700 absolute rounded-full right-0 bottom-1"></span>
             </div>
