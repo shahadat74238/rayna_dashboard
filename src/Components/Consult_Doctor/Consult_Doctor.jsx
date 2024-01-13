@@ -41,7 +41,7 @@ const Consult_Doctor = () => {
           </div>
           <div>
             <Button
-              className="bg-[#CC400C] text-white rounded-xl"
+              className="bg-[#EB5017] text-white !rounded-md"
               iconLeft={<GenericPlus className="text-white font-medium" />}
             >
               New Consultation
@@ -58,7 +58,7 @@ const Consult_Doctor = () => {
               4
             </p>
           </div>
-          <div className="p-3 flex gap-2 items-center bg-[#D0D5DD]">
+          <div className="p-3 rounded-md flex gap-2 items-center bg-[#D0D5DD]">
             <p>
               <TimeAlarm className="inline mr-2 text-moon-24" />
               Closed Consultations
@@ -67,7 +67,7 @@ const Consult_Doctor = () => {
             <p className="px-2 rounded-full text-moon-12 text-[#344054] font-medium bg-[#E4E7EC]">24</p>
           </div>
         </div>
-        {/* Tabil */}
+        {/* Table */}
         <div className="mt-10">
             <TableSection />
         </div>

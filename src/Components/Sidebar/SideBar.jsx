@@ -13,12 +13,12 @@ import { Avatar } from "@heathmont/moon-core-tw";
 
 const SideBar = () => {
   return (
-    <div className="w-full py-6 bg-white  border-r">
+    <div className="w-full py-6 bg-white   border-r">
       <div className="mx-6 my-2">
         <img className="scale-100" src={logo} alt="Loading Logo" />
       </div>
-      <div className="grid grid-rows-3">
-        <div className="mx-2 pb-3 row-span-1">
+      <div className="grid grid-rows-5 h-[80vh] mb-6">
+        <div className="mx-2 pb-3 row-span-2">
           <ul>
             <li>
               <NavLink
@@ -47,7 +47,7 @@ const SideBar = () => {
           </ul>
         </div>
         <div className="row-span-1"></div>
-        <div className="mx-2 row-span-1">
+        <div className="mx-2 row-span-2">
           <ul>
             <li>
               <p className="link_normal">

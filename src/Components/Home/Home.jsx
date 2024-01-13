@@ -38,7 +38,7 @@ const Home = () => {
           <div>
             <Link to="/campaign">
             <Button
-              className="bg-[#CC400C] text-white rounded-xl"
+              className="bg-[#EB5017] text-white !rounded-md"
               iconLeft={<GenericPlus className="text-white font-medium" />}
             >
               New Campaign
