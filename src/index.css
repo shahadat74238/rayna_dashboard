@@ -8,3 +8,6 @@
 .link_normal {
     @apply text-[#101928] block w-full  px-4 py-3 
 }
+.apexcharts-legend{
+    @apply flex-none 
+}
