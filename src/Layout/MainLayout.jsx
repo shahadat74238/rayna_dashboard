@@ -23,7 +23,7 @@ const MainLayout = () => {
           </Drawer.Panel>
         </Drawer>
       </div>
-      <div className="w-72 hidden border-r lg:block  ">
+      <div className="w-72 hidden lg:block bg-[#F0F2F5] ">
         <SideBar />
       </div>
       <div className=" w-full">

@@ -5,12 +5,13 @@ import {
   ControlsChevronDown,
   ArrowsDown,
 } from "@heathmont/moon-icons-tw";
-import Card from "../../Card/Card";
-import ChartCard from "../../Card/ChartCard";
-import SideChart from "../../Chart/SideChart";
-import chartUp from "../../../assets/chart-up.png";
-import ChartDetails from "../../Chart/ChartDetails";
-import Social from "../../Social/Social";
+import Card from "../Card/Card";
+import ChartCard from "../Card/ChartCard";
+import SideChart from "../Chart/SideChart";
+import chartUp from "../../assets/chart-up.png";
+import ChartDetails from "../Chart/ChartDetails";
+import Social from "../Social/Social";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -35,12 +36,14 @@ const Home = () => {
             </p>
           </div>
           <div>
+            <Link to="/campaign">
             <Button
               className="bg-[#CC400C] text-white rounded-xl"
               iconLeft={<GenericPlus className="text-white font-medium" />}
             >
               New Campaign
             </Button>
+            </Link>
           </div>
         </div>
         {/* card Container */}

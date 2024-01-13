@@ -1,8 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
-import Home from "../Components/ErrorPage/Home/Home";
 import Consult_Doctor from "../Components/Consult_Doctor/Consult_Doctor";
+import Home from "../Components/Home/Home";
+import Campaign from "../Components/Campaign/Campaign";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
         }
     ]
   },
+  {
+    path: "/campaign",
+    element: <Campaign />
+  }
 ]);
 
 export default router;
