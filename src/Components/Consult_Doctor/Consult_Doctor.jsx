@@ -31,7 +31,7 @@ const Consult_Doctor = () => {
         </div>
       </div>
       {/* next body */}
-      <div className="bg-[#F0F2F5] px-9 min-h-screen">
+      <div className="bg-[#F0F2F5] px-9">
         <div className="flex justify-between items-center pt-8">
           <div>
             <h1 className="text-moon-24 font-semibold">Consult a Doctor</h1>

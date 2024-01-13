@@ -10,7 +10,7 @@ const Social = () => {
                 <h1 className="text-moon-20 font-semibold text-[#1A1A21]">Social Networks</h1>
                 <p className="text-moon-14 text-[#8C94A6]">Connect your socials to third-party applications so they can share information with each other.</p>
             </div>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                 <div className="flex items-center border rounded-md justify-between p-6">
                     <div>
                         <img src={fb} alt="" />

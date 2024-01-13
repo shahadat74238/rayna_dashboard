@@ -1,7 +1,15 @@
 import { Button } from "@heathmont/moon-core-tw";
-import Toggle from "../Toggol/Toggle";
+import { useState } from "react";
 
 const CampaignBody = () => {
+  const [state, setState] = useState(false);
+  const [state2, setState2] = useState(false);
+  const handleChange = () => {
+    setState(!state);
+  };const handleChange2 = () => {
+    setState2(!state2);
+  };
+  console.log(state);
   return (
     <div>
       <div className="text-center">
@@ -60,15 +68,45 @@ const CampaignBody = () => {
           </div>
           <div className="mt-4">
             <div className="flex justify-between items-center">
-              <p>Run only once per customer</p>
+              <p
+                className={
+                  state2
+                    ? "text-[#1D2739] text-moon-14 font-medium"
+                    : "text-[#667185] text-moon-14 font-medium"
+                }
+              >
+                Run only once per customer
+              </p>
               <div>
-                <Toggle />
+                <label className="relative inline-flex items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    onChange={handleChange2}
+                    className="sr-only peer"
+                  />
+                  <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4  rounded-full peer  peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full  after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white   after:rounded-full after:h-5 after:w-5 after:transition-all  peer-checked:bg-[#F56630]"></div>
+                </label>
               </div>
             </div>
             <div className="mt-6 flex justify-between items-center">
-              <p className="text-[#667185]">Run only once per customer</p>
+              <p
+                className={
+                  state
+                    ? "text-[#1D2739] text-moon-14 font-medium"
+                    : "text-[#667185] text-moon-14 font-medium"
+                }
+              >
+                Run only once per customer
+              </p>
               <div>
-                <Toggle />
+                <label className="relative inline-flex items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    onChange={handleChange}
+                    className="sr-only peer"
+                  />
+                  <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4  rounded-full peer  peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full  after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white   after:rounded-full after:h-5 after:w-5 after:transition-all  peer-checked:bg-[#F56630]"></div>
+                </label>
               </div>
             </div>
             <p className="mt-4 text-[#667185] text-moon-14">
